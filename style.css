@@ -1,0 +1,217 @@
+/*---Font-family----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+  width:100%;
+  height:100vh;
+  background-color:#131212;
+  display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#profile{
+	position:relative;
+	width:550px;
+	min-height:400px;
+	background-color:#131212;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 0px 10px 10px #313030;
+	display:flex;
+	justify-content:center;
+	border-radius:10px;
+	padding:0px 20px;
+}
+#profile .profile-name{
+	text-align:center;
+	margin-bottom:50px;
+	border-bottom:1px dashed #0CAF21;
+}
+#profile .profile-name h2{
+	color:#ffffff;
+	font-size:30px;	
+	font-weight:bold;
+}
+
+#profile .profile-img{
+	display:inline-block;
+	width:100%;
+	float:left;
+	text-align:center;
+}
+.border-right{
+	
+}
+.border-right:after{
+	content: '';
+    background-color: #555;
+    height: 200px;
+    width: 1px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#profile .profile-img img{
+	width: 200px;
+    border-radius: 50%;
+    height: 200px;
+	margin-bottom:10px;
+}
+#profile .profile-img h4{
+	font-family: 'Lato', sans-serif;
+	color:#0CAF21;
+	font-weight:400;
+}
+#profile .profile-social{
+	display:inline-block;
+	float:left;
+	width:100%;
+	padding:0px 10px;
+	
+}
+#profile .profile-cnt{
+	margin-top:20px;
+}
+#profile .profile-social li{
+	list-style:none;
+	margin-bottom:10px;
+	border:1px solid #0CAF21;
+	border-radius:50px;
+	padding:5px 10px;
+	-webkit-transition:0.5s;
+	-ms-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+	text-align:center;
+}
+#profile .profile-social li a{
+	text-decoration:none;
+	font-size:20px;
+	-webkit-transition:0.5s;
+	-ms-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+#profile .profile-social li a i{
+	margin-right:8px;
+}
+#profile .profile-social .twitter{
+	border:1px solid #1DA1F2;
+}
+#profile .profile-social .twitter a{
+	color: #1DA1F2;
+}
+#profile .profile-social .twitter:hover, #profile .profile-social .twitter:focus{
+	color: #ffffff!important;
+	background-color:#1DA1F2;
+}
+#profile .profile-social li:hover a{
+	color:#fff!important;
+}
+
+#profile .profile-social .youtube{
+	border:1px solid #ff0000;
+}
+#profile .profile-social .youtube a{
+	color:#ff0000!important;
+}
+#profile .profile-social .youtube:hover, #profile .profile-social .youtube:focus{
+	color:#ffffff;
+	background-color:#ff0000;
+}
+
+#profile .profile-social .whatsapp{
+	border:1px solid #00E676;
+}
+#profile .profile-social .whatsapp a{
+	color:#00E676;	
+}
+#profile .profile-social .whatsapp:hover, #profile .profile-social .whatsapp:focus{
+	color: #ffffff!important;
+	background-color:#00E676;
+}
+
+#profile .profile-social .instagram{
+	border:1px solid #E1306C;
+}
+#profile .profile-social .instagram a{
+	color: #E1306C;
+}
+#profile .profile-social .instagram:hover, #profile .profile-social .instagram:focus{
+	color:#ffffff!important ;
+	background-color:#E1306C;
+}
+
+#profile .profile-social .phone{
+	border: 1px solid #2EAB1F;
+}
+#profile .profile-social .phone a{
+	color: #2EAB1F;
+}
+#profile .profile-social .phone:hover, #profile .profile-social .phone:focus{
+	color: #ffffff;
+	background-color:#2EAB1F;
+}
+.logout-btn{
+	text-align:center;
+}
+.logout-btn .btn{
+	color:#0CAF21;
+	border:1px solid #0CAF21;
+	background-color:transparent;
+	-webkit-transition:0.5s;
+	-ms-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+	font-size:16px;
+	padding:5px 15px;
+	margin:30px 0px 20px 0px;
+}
+.logout-btn .btn:hover, .logout-btn .btn:focus{
+	outline:0;
+	color:#ffffff;
+	background-color:#0CAF21;
+	
+}
+@media (max-width: 992px){
+	#profile .profile-name h2{
+		font-size:25px;
+	}
+}
+
+@media (max-width: 768px){
+	#profile{
+		width:400px;
+	}
+	#profile .profile-name {
+		margin-bottom: 20px;
+	}
+	#profile .border-right:after{
+		display:none;		
+	}
+	#profile .profile-img img{
+		width: 150px;
+		height: 150px;
+	}
+	#profile .profile-img h4{
+		font-size:16px;
+	}
+	#profile .profile-social{
+		margin:10px 0px;
+	}
+	#profile .profile-social li a{
+		font-size:16px;
+	}
+	#profile .profile-social li{
+		margin-bottom:8px;
+		padding:3px 5px;
+	}
+	.logout-btn .btn{
+		margin:20px 0px 20px 0px;
+	}
+}
